@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de satisfacción</title>
+
+    <link rel="stylesheet" href="ejer3 - estilos.css">
+    <link rel="icon" href="../Imágenes/ejercicios3.ejer1.icono.png">
+</head>
+
+<body>
+
+    <div class="borde">
+
+        <h1>Encuesta de satisfacción</h1>
+
+        <form>
+
+            <!-- Datos del cliente -->
+            <fieldset>
+                <legend>Datos del cliente</legend>
+
+                <div class="línea">
+                    <div>
+                        <label for="nombre">Nombre del cliente (opcional):</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+
+                    <div>
+                        <label for="servicio">Servicio utilizado:</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option value="reparacion">Reparación</option>
+                            <option value="instalacion">Instalación</option>
+                            <option value="mantenimiento">Mantenimiento</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <!-- Valoración -->
+            <fieldset>
+                <legend>Valoración del servicio</legend>
+
+                <p>¿Qué puntuación le das al servicio?</p>
+                <p>1 = Muy malo | 5 = Excelente</p>
+
+                    <input type="radio" id="valor1" name="valoracion" value="1" required>
+                    <label for="valor1" class="inline">1</label>
+
+                    <input type="radio" id="valor2" name="valoracion" value="2">
+                    <label for="valor2" class="inline">2</label>
+
+                    <input type="radio" id="valor3" name="valoracion" value="3">
+                    <label for="valor3" class="inline">3</label>
+
+                    <input type="radio" id="valor4" name="valoracion" value="4">
+                    <label for="valor4" class="inline">4</label>
+
+                    <input type="radio" id="valor5" name="valoracion" value="5">
+                    <label for="valor5" class="inline">5</label>
+
+                <hr>
+
+                <p>¿Qué aspectos te han gustado?</p>
+
+                    <input type="checkbox" id="atencion" name="aspectos" value="atencion">
+                    <label for="atencion" class="inline">Atención</label>
+
+                    <input type="checkbox" id="rapidez" name="aspectos" value="rapidez">
+                    <label for="rapidez" class="inline">Rapidez</label>
+
+                    <input type="checkbox" id="precio" name="aspectos" value="precio">
+                    <label for="precio" class="inline">Precio</label>
+
+                    <input type="checkbox" id="calidad" name="aspectos" value="calidad">
+                    <label for="calidad" class="inline">Calidad</label>
+
+                <hr>
+
+                <p>¿Recomendarías nuestro servicio?</p>
+
+                    <input type="radio" id="si" name="recomienda" value="si" required>
+                    <label for="si" class="inline">Sí</label>
+
+                    <input type="radio" id="no" name="recomienda" value="no">
+                    <label for="no" class="inline">No</label>
+            </fieldset>
+
+            <br>
+
+            <!-- Comentarios -->
+            <fieldset>
+                <legend>Comentarios adicionales</legend>
+
+                <label for="comentarios">Cuéntanos tu experiencia:</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+            </fieldset>
+
+            <br>
+
+            <!-- Botones -->
+            <div class="botones">
+                <input type="button" value="Enviar encuesta">
+                <input type="reset" value="Limpiar campos">
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- Tabla de encuestas ficticias -->
+    <h2>Resultados de las encuestas</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>N.º</th>
+                <th>Cliente</th>
+                <th>Servicio</th>
+                <th>Valoración</th>
+                <th>Aspectos positivos</th>
+                <th>Recomienda</th>
+                <th>Comentarios</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ana</td>
+                <td>Reparación</td>
+                <td class="valoracion-5">5</td>
+                <td>Atención, Calidad</td>
+                <td>Sí</td>
+                <td>Muy buen servicio</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Pedro</td>
+                <td>Instalación</td>
+                <td class="valoracion-4">4</td>
+                <td>Rapidez, Calidad</td>
+                <td>Sí</td>
+                <td>Rápido y eficaz</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Lucía</td>
+                <td>Reparación</td>
+                <td class="valoracion-3">3</td>
+                <td>Atención</td>
+                <td>No</td>
+                <td>Tardaron demasiado</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Carlos</td>
+                <td>Mantenimiento</td>
+                <td class="valoracion-5">5</td>
+                <td>Atención, Rapidez, Calidad</td>
+                <td>Sí</td>
+                <td>Excelente atención</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Elena</td>
+                <td>Instalación</td>
+                <td class="valoracion-2">2</td>
+                <td>Atención</td>
+                <td>No</td>
+                <td>Precio elevado</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Resumen de puntuaciones -->
+    <h2>Resumen de puntuaciones</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Puntuación</th>
+                <th>Número de respuestas</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="valoracion-1">1</td>
+                <td>0</td>
+            </tr>
+
+            <tr>
+                <td class="valoracion-2">2</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td class="valoracion-3">3</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td class="valoracion-4">4</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td class="valoracion-5">5</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

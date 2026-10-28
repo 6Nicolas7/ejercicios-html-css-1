@@ -1,0 +1,26 @@
+h1 {
+    font-size: 350%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2 {
+    font-size: 250%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(8, 53, 14)
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black
+}
+th {
+    background-color: beige;
+}
+.agotado {
+    background-color: rgb(252, 160, 160);
+}
+td:last-child {
+    text-align: center;
+}

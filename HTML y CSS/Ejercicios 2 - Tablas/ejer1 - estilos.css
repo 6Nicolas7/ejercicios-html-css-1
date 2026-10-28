@@ -1,0 +1,37 @@
+h1 {
+    font-size: 350%;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2 {
+    font-size: 250%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:darkblue
+}
+
+table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 2px solid blue
+        }
+        th {
+            background-color: lightgray;
+            font-size: 150%
+        }
+        td:first-child {
+            text-align: center;
+        }
+        td {
+            font-size: 125%
+        }
+        .aprobado {
+            background-color: green;
+            text-align: center;
+            color: white
+        }
+        .suspenso {
+            background-color: red;
+            text-align: center;
+            color: white;
+        }

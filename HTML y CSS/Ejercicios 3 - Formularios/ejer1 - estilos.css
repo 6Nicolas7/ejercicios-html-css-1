@@ -1,0 +1,23 @@
+.borde {
+    border: 1px solid black;
+    padding: 20px;
+    width: fit-content;
+}
+
+.línea {
+    display: flex;
+    gap: 45px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inline {
+    display: inline;
+}
+
+input[type="submit"] {
+    width: 100%;
+}

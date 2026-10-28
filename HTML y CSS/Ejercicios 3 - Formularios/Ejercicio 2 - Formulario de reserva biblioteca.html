@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de reserva biblioteca</title>
+
+    <link rel="stylesheet" href="ejer2 - estilos.css">
+    <link rel="icon" href="../Imágenes/ejercicios3.ejer1.icono.png">
+</head>
+<body>
+    <div class="borde">
+
+        <h1>Formulario de reserva de una biblioteca</h1>
+
+        <form>
+
+            <!-- Datos del usuario -->
+            <fieldset>
+                <legend>Datos del usuario</legend>
+
+                <!-- Primera línea con Nombre y Núm socio -->
+                <div class="línea">
+                    <div>
+                        <label for="name">Nombre y apellidos:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div>
+                        <label for="numsocio">Número de socio:</label>
+                        <input type="text" id="numsocio" name="numsocio" required>
+                    </div>
+                </div>
+
+                <!-- Segunda línea con Correo electrónico -->
+                <div class="línea">
+                    <div>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <!-- Datos del libro y las fechas -->
+            <fieldset>
+                <legend>Datos de la reserva</legend>
+
+                <!-- Tercera línea con Título del libro y Autor -->
+                <div class="línea">
+                    <div>
+                        <label for="titulo">Título del libro:</label>
+                        <input type="text" id="titulo" name="titulo" required>
+                    </div>
+
+                    <div>
+                        <label for="autor">Autor:</label>
+                        <input type="text" id="autor" name="autor" required>
+                    </div>
+                </div>
+
+                <!-- Cuarta línea con Fecha de reserva y Fecha prevista de recogida -->
+                <div class="línea">
+                    <div>
+                        <label for="reserva">Fecha de reserva:</label>
+                        <input type="date" id="reserva" name="reserva" required>
+                    </div>
+
+                    <div>
+                        <label for="recogida">Fecha prevista de recogida:</label>
+                        <input type="date" id="recogida" name="recogida" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <!-- Tipo de préstamo y comentarios -->
+            <fieldset>
+                <legend>Préstamo y comentarios</legend>
+
+                <!-- Tipo de préstamo -->
+                <label class="inline">Tipo de préstamo:</label>
+
+                <input type="radio" id="sala" name="prestamo" value="sala" required>
+                <label for="sala" class="inline">Sala</label>
+
+                <input type="radio" id="domicilio" name="prestamo" value="domicilio">
+                <label for="domicilio" class="inline">Domicilio</label>
+
+                <br><br>
+
+                <!-- Comentarios adicionales -->
+                <div class="línea">
+                    <div>
+                        <label for="comentario">Comentarios adicionales que consideres necesarios:</label>
+                        <input type="text" id="comentario" name="comentario">
+                    </div>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <!-- Botón de registrarse -->
+            <input type="submit" value="Enviar reserva">
+            <br>
+            <br>
+            <input type="reset" value="Limpiar los campos">
+
+        </form>
+
+    </div>
+
+    <!-- Tabla de reservas -->
+    <h2>Reservas registradas</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>N.º reserva</th>
+                <th>Usuario</th>
+                <th>Libro</th>
+                <th>Fecha de reserva</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ana López</td>
+                <td>El principito</td>
+                <td>14/10/2026</td>
+                <td class="pendiente">Pendiente</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Pablo Ruiz</td>
+                <td>La sombra del viento</td>
+                <td>13/10/2026</td>
+                <td class="confirmada">Confirmada</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Marta Díaz</td>
+                <td>Don Quijote</td>
+                <td>12/10/2026</td>
+                <td class="entregada">Entregada</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Luis Martín</td>
+                <td>Cien años de soledad</td>
+                <td>11/10/2026</td>
+                <td class="pendiente">Pendiente</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de inscripción</title>
+
+    <link rel="stylesheet" href="ejer1 - estilos.css">
+    <link rel="icon" href="../Imágenes/ejercicios3.ejer1.icono.png">
+</head>
+<body>
+    <div class="borde">
+
+    <h1>Registro de usuarios</h1>
+    
+    <form action="ejer1 - datos recibidos.html">
+<!-- Primera línea con Nombre y Apellidos -->
+        <div class="línea">
+            <div>
+                <label for="fname">Nombre:</label>
+                <input type="text" id="fname" name="fname" 
+                    value="" required>
+            </div>
+
+            <div>
+                <label for="lname">Apellidos:</label>
+                <input type="text" id="lname" name="lname" 
+                    value="" required>
+            </div>
+        </div>
+<!-- Segunda línea con DNI y Fecha de nacimiento -->
+        <div class="línea">
+            <div>
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni"
+                    value="" required>
+            </div>
+            
+            <div>
+                <label for="correo">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha"
+                    value="dd/mm/aa" required>
+            </div>
+        </div>
+<!-- Tercera línea con Correo electrónico y Teléfono -->
+        <div class="línea">
+            <div>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo"
+                    value="" required>
+            </div>
+
+            <div>
+                <label for="teléfono">Teléfono:</label>
+                <input type="tel" id="teléfono" name="teléfono"
+                    value="" required>
+            </div>
+        </div>
+
+        <br>
+            <hr>
+        <br>
+<!-- Línea con Ciclo formativo-->
+            <label for="ciclo" class="inline">Ciclo formativo:</label>
+                <select id="ciclo" name="ciclo">
+                    <option value="smr">SMR</option>
+                    <option value="daw">DAW</option>
+                    <option value="dam">DAM</option>
+                    <option value="dam">ASIR</option>
+                </select>
+        <br>
+
+        <br>
+<!-- Línea con Turno que cursas-->
+            <label for="turno" class="inline">Turno que cursas:</label>
+                <input type="radio" id="mañana" name="turno" value="mañana" required>
+                <label for="mañana" class="inline">Mañana</label>
+
+                <input type="radio" id="tarde" name="turno" value="tarde">
+                <label for="tarde" class="inline">Tarde</label>
+        <br>
+
+        <br>
+<!-- Línea con Modalidad-->
+            <label for="turno" class="inline">Modalidad:</label>
+                <input type="radio" id="presencial" name="modalidad" value="presencial" required>
+                <label for="presencial" class="inline">Presencial</label>
+
+                <input type="radio" id="semipresencial" name="modalidad" value="semipresencial">
+                <label for="semipresencial" class="inline">Semipresencial</label>
+
+                <input type="radio" id="online" name="modalidad" value="online">
+                <label for="online" class="inline">Online</label>
+        
+        <br>
+        <br>
+            <hr>
+        <br>
+<!-- Línea de Aceptar política de privacidad-->
+            <p>
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <label for="privacidad" class="inline">Acepto la política de privacidad</label>
+            </p>
+        
+        <br>
+<!-- Botón de registrarse-->
+        <input type="submit" value="Register">
+    </form>
+    
+    </div>
+    
+</body>
+</html>

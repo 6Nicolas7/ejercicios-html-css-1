@@ -1,0 +1,47 @@
+.borde {
+    border: 1px solid black;
+    padding: 20px;
+    width: fit-content;
+}
+
+.línea {
+    display: flex;
+    gap: 45px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inline {
+    display: inline;
+}
+
+input[type="submit"] {
+    width: 100%;
+}
+input[type="reset"] {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+}
+    th, td {
+        border: 1px solid black;
+    }
+    th {
+        text-align: center;
+    }
+    .pendiente {
+        background-color: rgb(255, 171, 171);
+    }
+    .confirmada {
+        background-color: rgb(168, 255, 168);
+    }
+    .entregada {
+        background-color: rgb(255, 255, 174);
+    }

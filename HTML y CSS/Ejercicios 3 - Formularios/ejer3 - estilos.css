@@ -1,0 +1,99 @@
+/* Contenedor del formulario */
+.borde {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Organización de los campos */
+.línea {
+    display: flex;
+    gap: 45px;
+    margin-bottom: 15px;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inline {
+    display: inline;
+}
+
+/* Grupos del formulario */
+fieldset {
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+/* Campos */
+input[type="text"],
+select,
+textarea {
+    padding: 5px;
+}
+
+/* Comentarios */
+textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="button"],
+input[type="reset"] {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Tablas */
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: #dddddd;
+}
+
+/* Colores de las valoraciones */
+.valoracion-1,
+.valoracion-2 {
+    background-color: #f5c6cb;
+    color: #721c24;
+}
+
+.valoracion-3 {
+    background-color: #ffe5b4;
+    color: #8a4b08;
+}
+
+.valoracion-4,
+.valoracion-5 {
+    background-color: #d4edda;
+    color: #155724;
+}
