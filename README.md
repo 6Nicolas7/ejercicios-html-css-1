@@ -17,12 +17,14 @@ Carpeta de Ejercicio 2 - Tablas
     Ejercicio 3 - Horario de clase
         ejer3 - estilos
     
-  Carpeta de Ejercicios 3 - Formularios
-      Ejercicio 1 - Formulario de inscripción
-          ejer1 - estilos
-          ejer1 - datos recibidos
-      Ejercicio 2 - Formulario de reserva biblioteca
-          ejer2 - estilos
-      Ejercicio 3 - Encuesta de satisfacción
-          ejer3 - estilos
-  
+Carpeta de Ejercicios 3 - Formularios
+    Ejercicio 1 - Formulario de inscripción
+        ejer1 - estilos
+        ejer1 - datos recibidos
+    Ejercicio 2 - Formulario de reserva biblioteca
+        ejer2 - estilos
+    Ejercicio 3 - Encuesta de satisfacción
+        ejer3 - estilos
+
+Carpeta de Imágenes
+    Todas las imágenes necesarias para las actividades
